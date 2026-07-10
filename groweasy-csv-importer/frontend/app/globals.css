@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  /* -- Palette: "control room" for a lead pipeline -- */
+  --bg: #0b0f14;
+  --panel: #121821;
+  --panel-alt: #171f2a;
+  --border: #232d3a;
+  --border-soft: #1b2430;
+
+  --text: #e6edf3;
+  --text-muted: #7c8a99;
+  --text-faint: #4c5a6a;
+
+  --amber: #ffb020; /* active / processing */
+  --amber-dim: #4a3a17;
+  --mint: #3ddc97; /* success / imported */
+  --mint-dim: #163a2c;
+  --red: #ff6b6b; /* skipped / error */
+  --red-dim: #3a1e1e;
+  --cyan: #4fd1f0; /* links / highlight */
+
+  --font-display: "IBM Plex Sans", "Inter", sans-serif;
+  --font-body: "Inter", "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(255, 176, 32, 0.06), transparent),
+    radial-gradient(ellipse 900px 500px at 100% 0%, rgba(79, 209, 240, 0.05), transparent),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--cyan);
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--amber);
+  color: #14100a;
+}
+
+/* scrollbars styled to fit the console aesthetic */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+*::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
