@@ -99,6 +99,13 @@ The UI follows a "pipeline" concept — a 4-stage rail (Upload → Preview → A
 
 Remember to set `CORS_ORIGIN` on the backend to your deployed frontend's URL, and `NEXT_PUBLIC_API_BASE_URL` on the frontend to your deployed backend's URL.
 
+## Result Analysis 
+<img width="959" height="411" alt="image" src="https://github.com/user-attachments/assets/a6d35e58-aa3f-4fc0-93fd-9294a0ea4a31" />
+<img width="959" height="448" alt="image" src="https://github.com/user-attachments/assets/c1cb7db6-8ad9-4364-8b15-74a085719c82" />
+<img width="959" height="466" alt="image" src="https://github.com/user-attachments/assets/af53005f-40d0-47d0-8a65-9093fe203a57" />
+- **Website Link**->https://groweasy-csv-importer-veenasree.vercel.app
+
+
 ## Possible next steps
 
 - Persist import history in a database
